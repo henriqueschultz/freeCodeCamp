@@ -14,32 +14,35 @@
       </h1>
       <p id="description">We want to know about your favorite planet. Tell us!</p>
       <form id="survey-form">
-        <label id="name-label" for="name">
+        <label id="name-label" class="block" for="name">
            What is your name ?
         </label>
         <input
           type="text"
           name="name"
           id="name"
+          class="block full-wdt"
           placeholder="Enter your name"
           required
         />
-        <label id="email-label" for="email">
+        <label id="email-label" class="block" for="email">
           What is your email ?
         </label>
         <input
           type="email"
           name="email"
           id="email"
+          class="block full-wdt"
           placeholder="Enter your Email"
           required
         />
-        <label id="number-label" for="age">
+        <label id="number-label" class="block" for="age">
           What is your age ?
         </label>
         <input
           type="number"
           id="number"
+          class="block full-wdt"
           name="age"
           max="99" 
           min="1"
@@ -70,76 +73,88 @@
           </option>
         </select>
         <p>What is your favorite planet ?</p>
-        <label>
-          <input name="fav-planet" type="radio" value="mercury">
-          Mercury
-        </label>
-        <label>
-          <input name="fav-planet" type="radio" value="venus">
-          Venus
-        </label>
-        <label>
-          <input name="fav-planet" type="radio" value="earth">
-          Earth
-        </label>
-        <label>
-          <input name="fav-planet" type="radio" value="mars">
-          Mars
-        </label>
-        <label>
-          <input name="fav-planet" type="radio" value="jupiter">
-          Jupiter
-        </label>
-        <label>
-          <input name="fav-planet" type="radio" value="saturn">
-          Saturn
-        </label>
-        <label>
-          <input name="fav-planet" type="radio" value="neptune">
-          Neptune
-        </label>
-        <label>
-          <input name="fav-planet" type="radio" value="uranus">
-          Uranus
-        </label>
-        <label>
-          <input name="fav-planet" type="radio" value="pluto">
-          Pluto
-        </label>
+        <div class="row-container">
+          <div class="column-container">
+            <label>
+              <input name="fav-planet" type="radio" value="mercury">
+              Mercury
+            </label>
+            <label>
+              <input name="fav-planet" type="radio" value="venus">
+              Venus
+            </label>
+            <label>
+              <input name="fav-planet" type="radio" value="earth">
+              Earth
+            </label>
+          </div>
+          <div class="column-container">
+            <label>
+              <input name="fav-planet" type="radio" value="mars">
+              Mars
+            </label>
+            <label>
+              <input name="fav-planet" type="radio" value="jupiter">
+              Jupiter
+            </label>
+            <label>
+              <input name="fav-planet" type="radio" value="saturn">
+              Saturn
+            </label>
+          </div>
+          <div class="column-container">
+            <label>
+              <input name="fav-planet" type="radio" value="neptune">
+              Neptune
+            </label>
+            <label>
+              <input name="fav-planet" type="radio" value="uranus">
+              Uranus
+            </label>
+            <label>
+              <input name="fav-planet" type="radio" value="pluto">
+              Pluto
+            </label>
+          </div>
+        </div>      
         <p>Why you choose this planet ?</p>
-        <label>
-          <input 
-          type="checkbox" 
-          name="motivation"
-          value="live"
-          />
-          I Live Here!
-        </label>
-        <label>
-          <input
-            type="checkbox"
+        <div class="column-container">
+          <label>
+            <input 
+            type="checkbox" 
             name="motivation"
-            value="color"
-          />
-          I like the colors!
-        </label>
-        <label>
-          <input 
-            type="checkbox"
-            name="motivation"
-            value="visit"
-          />
-          I would like to visit! 
-        </label>
+            value="live"
+            />
+            I Live Here!
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="motivation"
+              value="color"
+            />
+            I like the colors!
+          </label>
+          <label>
+            <input 
+              type="checkbox"
+              name="motivation"
+              value="visit"
+            />
+            I would like to visit! 
+          </label>
+        </div>        
         <p>Leave a message for us! Anything, a simple hi is enough...</p>
         <textarea
           id="comment"
+          class="full-wdt"
           name="comment"
           placeholder="Leave a message here"
         ></textarea>
         <button 
           type="submit" 
           id="submit"
+          class="full-wdt"
           form="survey-form"
         >Submit</button>
       </form>

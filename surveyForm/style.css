@@ -1,4 +1,4 @@
-p {
+form {
     background-color: red;
 }
 
@@ -15,4 +15,23 @@ p {
     .breakpoint {
         width: 700px;
     }
+
+    .row-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;        
+    }
+}
+
+.block {
+    display: block;
+}
+
+.full-wdt {
+    width: 100%;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
 }
