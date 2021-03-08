@@ -7,140 +7,144 @@
   <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-<h1 id="title">
-  What's your favorite planet ?! 
-</h1>
-<p id="description">We want to know about your favorite planet. Tell us!</p>
-<form id="survey-form">
-  <label id="name-label" for="name">
-     What is your name ?
-  </label>
-  <input
-    type="text"
-    name="name"
-    id="name"
-    placeholder="Enter your name"
-    required
-  />
-  <label id="email-label" for="email">
-    What is your email ?
-  </label>
-  <input
-    type="email"
-    name="email"
-    id="email"
-    placeholder="Enter your Email"
-    required
-  />
-  <label id="number-label" for="age">
-    What is your age ?
-  </label>
-  <input
-    type="number"
-    id="number"
-    name="age"
-    max="99" 
-    min="1"
-    placeholder="Age..."
-    required
-  />
-  <label id="dropdown-label" for="role">
-    What best describes you?
-  </label>
-  <select id="dropdown" name="role" required >
-    <option disabled selected value>
-      Select one.. 
-    </option>
-    <option value="student">
-      I am a astronomy student
-    </option>
-    <option value="hobbyst">
-      I am amateur astronomer
-    </option>
-    <option value="professional">
-      I am a professional astronomer
-    </option>
-    <option value="curious">
-      I am just curious
-    </option>
-    <option value="none">
-      None of above
-    </option>
-  </select>
-  <p>What is your favorite planet ?</p>
-  <label>
-    <input name="fav-planet" type="radio" value="mercury">
-    Mercury
-  </label>
-  <label>
-    <input name="fav-planet" type="radio" value="venus">
-    Venus
-  </label>
-  <label>
-    <input name="fav-planet" type="radio" value="earth">
-    Earth
-  </label>
-  <label>
-    <input name="fav-planet" type="radio" value="mars">
-    Mars
-  </label>
-  <label>
-    <input name="fav-planet" type="radio" value="jupiter">
-    Jupiter
-  </label>
-  <label>
-    <input name="fav-planet" type="radio" value="saturn">
-    Saturn
-  </label>
-  <label>
-    <input name="fav-planet" type="radio" value="neptune">
-    Neptune
-  </label>
-  <label>
-    <input name="fav-planet" type="radio" value="uranus">
-    Uranus
-  </label>
-  <label>
-    <input name="fav-planet" type="radio" value="pluto">
-    Pluto
-  </label>
-  <p>Why you choose this planet ?</p>
-  <label>
-    <input 
-    type="checkbox" 
-    name="motivation"
-    value="live"
-    />
-    I Live Here!
-  </label>
-  <label>
-    <input
-      type="checkbox"
-      name="motivation"
-      value="color"
-    />
-    I like the colors!
-  </label>
-  <label>
-    <input 
-      type="checkbox"
-      name="motivation"
-      value="visit"
-    />
-    I would like to visit! 
-  </label>
-  <p>Leave a message for us! Anything, a simple hi is enough...</p>
-  <textarea
-    id="comment"
-    name="comment"
-    placeholder="Leave a message here"
-  ></textarea>
-  <button 
-    type="submit" 
-    id="submit"
-    form="survey-form"
-  >Submit</button>
-</form>
+  <div class="center-content">
+    <div class="breakpoint">
+      <h1 id="title">
+        What's your favorite planet ?! 
+      </h1>
+      <p id="description">We want to know about your favorite planet. Tell us!</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">
+           What is your name ?
+        </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <label id="email-label" for="email">
+          What is your email ?
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+        <label id="number-label" for="age">
+          What is your age ?
+        </label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          max="99" 
+          min="1"
+          placeholder="Age..."
+          required
+        />
+        <label id="dropdown-label" for="role">
+          What best describes you?
+        </label>
+        <select id="dropdown" name="role" required >
+          <option disabled selected value>
+            Select one.. 
+          </option>
+          <option value="student">
+            I am a astronomy student
+          </option>
+          <option value="hobbyst">
+            I am amateur astronomer
+          </option>
+          <option value="professional">
+            I am a professional astronomer
+          </option>
+          <option value="curious">
+            I am just curious
+          </option>
+          <option value="none">
+            None of above
+          </option>
+        </select>
+        <p>What is your favorite planet ?</p>
+        <label>
+          <input name="fav-planet" type="radio" value="mercury">
+          Mercury
+        </label>
+        <label>
+          <input name="fav-planet" type="radio" value="venus">
+          Venus
+        </label>
+        <label>
+          <input name="fav-planet" type="radio" value="earth">
+          Earth
+        </label>
+        <label>
+          <input name="fav-planet" type="radio" value="mars">
+          Mars
+        </label>
+        <label>
+          <input name="fav-planet" type="radio" value="jupiter">
+          Jupiter
+        </label>
+        <label>
+          <input name="fav-planet" type="radio" value="saturn">
+          Saturn
+        </label>
+        <label>
+          <input name="fav-planet" type="radio" value="neptune">
+          Neptune
+        </label>
+        <label>
+          <input name="fav-planet" type="radio" value="uranus">
+          Uranus
+        </label>
+        <label>
+          <input name="fav-planet" type="radio" value="pluto">
+          Pluto
+        </label>
+        <p>Why you choose this planet ?</p>
+        <label>
+          <input 
+          type="checkbox" 
+          name="motivation"
+          value="live"
+          />
+          I Live Here!
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="motivation"
+            value="color"
+          />
+          I like the colors!
+        </label>
+        <label>
+          <input 
+            type="checkbox"
+            name="motivation"
+            value="visit"
+          />
+          I would like to visit! 
+        </label>
+        <p>Leave a message for us! Anything, a simple hi is enough...</p>
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Leave a message here"
+        ></textarea>
+        <button 
+          type="submit" 
+          id="submit"
+          form="survey-form"
+        >Submit</button>
+      </form>
+    </div>
+  </div>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
