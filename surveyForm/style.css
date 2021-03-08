@@ -60,3 +60,8 @@ body, div, input, label h1, textarea, button {
     display: flex;
     flex-direction: column;
 }
+
+.margin-l-r {
+    margin-left: 5px;
+    margin-right: 5px;
+}
