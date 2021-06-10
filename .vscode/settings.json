@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.NoBrowser": true,
+    "liveServer.settings.root": "/surveyForm/"
+}
