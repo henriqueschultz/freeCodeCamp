@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="answers-container">
-        <div>
+        <div class="answers-section-container">
           <label for="dropdown" class="answers-control">Select your favorite planet:</label>
           <select id="dropdown" class="answers-control" name="fav-planet" required="">
             <option disabled="" selected="" value="">Select one planet!</option>
@@ -45,7 +45,7 @@
             <option value="pluto">Pluto(Yes! Iam a planet too!</option>
           </select>
         </div>
-        <div>
+        <div class="answers-section-container">
           <p class="answers-control">Why did you choose this planet?</p>
           <div>
             <label class="answers-control">
@@ -61,7 +61,38 @@
               Pluto is not a planet!!! :X
             </label>
           </div>
+        </div>
+        <div class="answers-section-container">
+          <p class="answers-control">Am I?(Mark all that apply)</p>
+          <div>
+            <label class="answers-control">
+              <input class="answers-control" name="iam" value="amateur-astronomer" type="checkbox">
+              Amateur astronomer
+            </label>
+          </div>
+          <div>
+            <label class="answers-control">
+              <input class="answers-control" name="iam" value="professional-astronomer" type="checkbox">
+              Professional astronomer
+            </label>
+          </div>
+          <div>
+            <label class="answers-control">
+              <input class="answers-control" name="iam" value="student-astronomer" type="checkbox">
+              Student astronomer
+            </label>
+          </div>
         </div>       
+      </div>
+      <div class="comments-container">
+        <label class="comments-control" for="comments">Any comments or suggestions?</label>
+        <textarea class="comments-control" id="comments" name="comments" placeholder="Enter your comment here...">
+        </textarea>
+      </div>
+      <div class="submit-container">
+        <button type="submit" id="submit">
+          Submit
+        </button>
       </div>
     </form>
   </div>
