@@ -98,8 +98,33 @@ body {
 .answers-control {
     margin-top: 5px;
     margin-bottom: 5px;
+    font-weight: bold;
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.answers-control-select {
+    padding: 3px 3px 3px 3px;
+    outline: none;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid #2f2f2f;
+    color: rgba(47,47,47, 0.75);
+}
+
+.answers-control-select:focus {
+    outline: rgba(47,47,47, 0.75) solid 1px;
+    box-shadow: 4px 3px rgba(47,47,47, 0.25); 
+}
+
+.answers-control-option {
+    font-size: 15px;
+    font-weight: inherit;
+    color: rgba(47,47,47, 0.75);    
+}
+
+input[type="radio"] {
+    border-color: royalblue;
 }
 
 label.answers-control {
@@ -124,6 +149,5 @@ textarea.comments-control {
 }
 
 .submit-container {
-    margin: 15px 15px 15px 15px;
-    
+    margin: 15px 15px 15px 15px;    
 }
