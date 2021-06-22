@@ -39,6 +39,7 @@ body {
 }
 
 .description, .personal-info-control, .answers-control, .comments-control, .submit-control {
+    display: block;
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -53,7 +54,6 @@ body {
 
 .personal-info-control {
     width: 100%;
-    display: block;
 }
 
 .personal-info-control[type="number"] {
@@ -62,7 +62,7 @@ body {
     max-width: 70px;       
 }
 
-.personal-info-control-input {
+.personal-info-control-input, .answers-control-select {
     padding: 3px 3px 3px 3px;
     outline: none;
     background-color: transparent;
@@ -85,11 +85,6 @@ body {
 }
 
 .answers-control-select {
-    padding: 3px 3px 3px 3px;
-    outline: none;
-    background-color: transparent;
-    border-style: none;
-    border-bottom: 1px solid #2f2f2f;
     color: rgba(47,47,47, 0.75);
 }
 
@@ -102,14 +97,6 @@ body {
     font-size: 15px;
     font-weight: inherit;
     color: rgba(47,47,47, 0.75);    
-}
-
-label.answers-control {
-    display: block;
-}
-
-.comments-control {
-    display: block;
 }
 
 .comments-control-textarea {
